@@ -1,0 +1,2 @@
+mapbox_access_token = "pk.eyJ1IjoidHJ5YW5ib2JvIiwiYSI6ImNqMjgwaTNkdzAwaGwzM3Fxb213cHRhc3cifQ.4IgzUCupbXjZ4CBslC4swg"
+geocoder_api_key = "fe831e9fe9d1445fb0820be11049c546"
