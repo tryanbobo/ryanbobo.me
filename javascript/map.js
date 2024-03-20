@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var mymap = L.map("mapid").setView([0, 0], 13);
+  var mymap = L.map("mapid").setView([0, 0], 6.5);
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution:
@@ -112,14 +112,14 @@ document.addEventListener("DOMContentLoaded", function () {
     "<div id='certificates'><b><strong> Certificates </strong><b><br>\
       <br><p><a href=certificates/EsriSpacialAnalyst2012.pdf target=blank rel=noopener noreferrer>Esri - Learning Spatial Analyst</a><br> \
       <a href=certificates/GoingPlaceswithSpatialAnalysis.pdf target=blank rel=noopener noreferrer>Esri - Going Places with Spatial Analysis</a><br> \
-      <a href=certificates/GIS_PythonForEveryone.pdf target=blank rel=noopener noreferrer>Python for Everyone</a><br> \
+      <a href=certificates/GIS_PythonForEveryone.pdf target=blank rel=noopener noreferrer>Esri - Python for Everyone</a><br> \
       <a href=certificates/BasicsOfPython.pdf target=blank rel=noopener noreferrer>Esri - Basics of Python</a><br> \
       <a href=certificates/PythonScriptingforGeoprocessionWorkflows.pdf target=blank rel=noopener noreferrer>Esri - Python Scripting for Geoprocessing Workflows</a><br> \
       <a href=certificates/ArcGISEssentialTraining_CertificateOfCompletion.pdf target=blank rel=noopener noreferrer>Lynda - ArcGIS Essential Training</a><br> \
       <a href=certificates/FoundationsofProgramming_Databases_CertificateOfCompletion.pdf target=blank rel=noopener noreferrer>Lynda - Foundations of Programming: Databases</a><br> \
-      <a href=certificates/GIS_NetworkBuisnessAnalysis1.pdf target=blank rel=noopener noreferrer>Texas State University Library - Network/Business Analysis - Part 1</a><br> \
-      <a href=certificates/GIS_NetworkBuisnessAnalysis2.pdf target=blank rel=noopener noreferrer>Texas State University Library - Network/Business Analysis - Part 2</a><br> \
-      <a href=certificates/GIS_WherethereisnoArcGIS.pdf target=blank rel=noopener noreferrer>Texas State University Library - Exploring Open Source GIS</a><br> \
+      <a href=certificates/GIS_NetworkBuisnessAnalysis1.pdf target=blank rel=noopener noreferrer>TXST Library - Network/Business Analysis - Part 1</a><br> \
+      <a href=certificates/GIS_NetworkBuisnessAnalysis2.pdf target=blank rel=noopener noreferrer>TXST Library - Network/Business Analysis - Part 2</a><br> \
+      <a href=certificates/GIS_WherethereisnoArcGIS.pdf target=blank rel=noopener noreferrer>TXST Library - Exploring Open Source GIS</a><br> \
       </p></div>",
     {
       minWidth: 350,
@@ -202,11 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>"
   );
 
-  // // dynamic year
-  // var pyStart = 2015;
-  // var currentYear = new Date().getFullYear();
-  // var yearsOfPy = currentYear - pyStart;
-
-  // document.getElementById("year").innerHTML = currentYear;
-  // document.getElementById("pyYr").innerHTML = yearsOfPy;
+  // dynamic copyright year
+  var currentYear = new Date().getFullYear();
+  document.getElementById("year").innerHTML = currentYear;
 });

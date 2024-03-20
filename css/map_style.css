@@ -22,7 +22,6 @@ b {
   font-size: 15px;
   font-weight: bold;
 }
-
 p,
 a {
   font-size: 11px;
@@ -34,47 +33,74 @@ div {
 }
 
 /* FOOTER */
+
 footer {
-  /* background: #aad3df; */
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  line-height: 0.5;
+  height: 30px;
+}
+
+#copyright {
+  justify-content: flex-end;
+  display: flex;
   color: black;
-  text-align: center;
+  text-align: match-parent;
   padding: 0px 0px; /* Adjusted padding for top/bottom and left/right */
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   z-index: 1000;
-  height: 30px;
+  height: 20px;
   line-height: 1;
+  padding-bottom: 0px;
+}
+
+.socials {
+  flex-direction: row-reverse; /* Reverse the order for right alignment */
+  margin-right: 10px; /* Adjust margin for right alignment */
+  margin-left: 0; /* Remove left margin */
+}
+
+.socials li {
+  margin-right: 5px; /* Adjust margin for right alignment */
+  margin-left: 0; /* Remove left margin */
 }
 
 ul {
   display: block;
-  list-style-type: disc;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  left: 0;
+  bottom: 0;
   margin-left: 0;
   margin-right: 0;
   padding-left: 3px;
 }
 
 footer p {
-  color: #f9dc5c;
-  font-size: 12px; /* Adjusted font size */
+  color: #000000;
+  font-size: 12px;
   align-items: center;
   padding-left: 5px;
+  margin-top: auto; /* Push the <p> to the bottom */
 }
 
 .socials {
   list-style-type: none;
-  padding-top: 0px;
+  padding-top: 15px;
   display: flex;
-  justify-content: left;
+  justify-content: left; /* Align to the left by default */
   align-items: center;
+  margin-top: auto; /* Push the socials to the bottom */
 }
 
 .socials li {
-  margin-left: 9px;
+  margin-left: 5px;
 }
 
 .socials img:hover {
@@ -88,7 +114,7 @@ footer p {
 @media screen and (min-width: 475px) {
   footer {
     display: flex;
-    justify-content: left;
+    justify-content: right;
     position: fixed;
     padding: 0px 0px;
     left: 0;
