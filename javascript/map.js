@@ -92,11 +92,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   project.bindPopup(
     "<div id='projects'><b><strong> Projects</strong><b> <br>\
+    <p>\
       <a class ='btn' href='https://github.com/tryanbobo/dxf-roomnum-extraction' target='_blank'>Dxf Room Number Extraction</a><br>\
       <a class ='btn' href='https://github.com/tryanbobo/GeoDB-Update' target='_blank'>GeoDB-Update</a><br>\
       <a class ='btn' href='https://github.com/tryanbobo/IndoorWiFIOccupancy' target='_blank'>Indoor Wi-Fi Occupancy Analysis</a><br>\
       <a class ='btn' href='https://github.com/tryanbobo/FindYourPath' target='_blank'>Find Your Path</a><br>\
       <a class ='btn' href='https://github.com/tryanbobo/Transpropagation' target='_blank'>Transpropagation</a>\
+    </p>\
     "
   );
 
@@ -122,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <a href=certificates/GIS_WherethereisnoArcGIS.pdf target=blank rel=noopener noreferrer>TXST Library - Exploring Open Source GIS</a><br> \
       </p></div>",
     {
-      minWidth: 350,
+      maxWidth: 300,
     }
   );
 
@@ -140,7 +142,10 @@ document.addEventListener("DOMContentLoaded", function () {
       Master's of Applied Geography, <br>Geographic Information Science / 2018-2023 <br><br> \
       Bachelor's of Science, Water Resources / 2009-2013 <br><br> \
       Certificates in Geographic Information Science and Envrionmental Interpretation / 2009-2013 <br><br> \
-      </p></div>"
+      </p></div>",
+    {
+      maxWidth: 200,
+    }
   );
 
   var work = L.marker([-13.163056, -72.54556], { icon: workIcon })
@@ -155,16 +160,19 @@ document.addEventListener("DOMContentLoaded", function () {
     "<div id='work'><b><strong> Texas State Univerity <br>Network Operations / 2012 - present\
       </strong><b><br> <img src='images/work.jpg' width='128px' height='100'><br><p>\
       The majority of my relevant work experience is centered around Network Operations \
-      managing fiber optic and copper telephone cables using various spatial solutions \
+      managing fiber optic and copper telephone cables using various spatial solutions <br> \
       <br> Responsibilities Include: \
-      <br><br> Design and manage the installation of outside plant telecom cables. \
-      <br> Maintain GIS database using SQL Server Manager. \
-      <br> Manage the creation of CAD diagrams of telecom enclosures and rooms. \
-      <br> Train Network Operations staff on M4 Solutions and Pinnacle software. \
-      <br> Ensure inside and outside plant cabling database records are current.\
+      <ul>\
+        <li>\
+          <p>Manage, design, and maintain fiber optic and telephony OSP infrastructure using GIS (M4 solutions).</p>\
+        </Li>\
+        <li>\
+          <p>Coordinate and advise new OSP construction, cable pulls, and fiber splicing.</p>\
+        </li>\
+      </ul>\
       </p></div>",
     {
-      minWidth: 400,
+      maxWidth: 200,
     }
   );
 
@@ -182,7 +190,10 @@ document.addEventListener("DOMContentLoaded", function () {
       Study abroad that saw the completion of two undergraduate courses: <br><br> \
       GIS Design and Implementation and Regional Field Studies <br><br> \
       GPA: 4.0 - Project Manager \
-      </p></div>"
+      </p></div>",
+    {
+      maxWidth: 200,
+    }
   );
 
   var welcome = L.marker([0, 0], { icon: welcIcon })
@@ -197,8 +208,11 @@ document.addEventListener("DOMContentLoaded", function () {
     "<div id='welcome'>\
       <b><strong> Hi, my name is Ryan Bobo</strong><b><br>\
       <img src='images/RYAN.jpg' width='100px' height='100'><br>\
-      <p>I solve problems with geospatial technologies. <br> \
-      Zoom out to learn more about me, <br>and thanks for stopping by!</p>\
-    </div>"
+      <p>I solve problems with geospatial technologies.\
+      Zoom out to learn more about me, and thanks for stopping by!</p>\
+    </div>",
+    {
+      maxWidth: 200,
+    }
   );
 });

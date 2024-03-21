@@ -15,7 +15,7 @@ body {
 
 .leaflet-popup-content-wrapper .leaflet-popup-tip {
   background: white;
-  text-align: center;
+  text-align: right;
 }
 
 b {
@@ -25,7 +25,7 @@ b {
 p,
 a {
   font-size: 11px;
-  text-align: center;
+  text-align: left;
 }
 
 div {
