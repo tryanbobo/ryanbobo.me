@@ -1,0 +1,228 @@
+/*
+
+$tea-rose-red: #efc7c2ff;
+$cadet-gray: #7a9e9fff;
+$polynesian-blue: #1a4993ff;
+$russian-violet: #28024bff;
+$russian-violet-2: #160839ff;
+*/
+
+/* GLOBAL STYLES
+-------------------------------------------------*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*set default to 10px*/
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+html, body{
+    height: 100%
+    
+}
+body {
+    background: #f3f1e7;
+    margin: 4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+h1, h2, h3 {
+    font-family: 'Audiowide', sans-serif;
+}
+h1 {
+    font-size: 5.9rem;
+    letter-spacing: 0.2em;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.2rem;
+}
+a {
+    color: #61BCB3;
+}
+a:hover {
+    color: #F98F82;
+    text-decoration: none;
+}
+.btn {
+    background: #735D78;
+    color:#f9dc5c;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+    display: inline-block;
+    padding: 7px;
+    line-height: 1;
+    border-radius: 7px;
+    /* border-style: dashed; */
+}
+.content-wrapper{
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+    
+}
+/* HOME
+-------------------------------------------------*/
+.home{
+    background: url(../images/background_auto_x2_colored.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.home .content-wrapper{
+    flex: 1 0 auto;
+}
+.content-bg{
+    background: rgb(255 255 255 /0.9);
+    padding: 30px;
+}
+@media screen and (max-width:650px) {
+    .home .content-wrapper{
+    padding: 10px;
+    }
+    .content-bg {
+        padding: 18px;
+    }
+}
+/* RESUME
+-------------------------------------------------*/
+.resume header::before {
+    background: url(../images/background_auto_x2_colored.jpg) no-repeat bottom;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 375px;
+}
+.resume-section {
+    margin-bottom: 50px;
+}
+.resume-section h2 {
+    border-bottom: 2px dashed #F98F82
+}
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    font-size: 1.4rem;
+}
+@media screen and (max-width: 900px) {
+    .download-link {
+        position: absolute;
+    }
+}
+@media screen and (max-width: 500px){
+    .resume header::before{
+        height: 200px;
+    }
+        h1{
+            font-size: 2.6rem;
+        }
+        h2 {
+            font-size: 2.2rem;
+        }
+}
+/* PROJECTS
+-------------------------------------------------*/
+.project-item{
+    margin: 30px 0;
+}
+.project-item img {
+    width: 300px;
+    border-style: inset;
+    border-color:#735D78;
+    border-width: 5px;
+    border-radius: 6px;
+}
+@media screen and (min-width:750px){
+    .project-item{
+        display: flow-root;
+        margin: 30px 0;
+    }
+    .project-item img {
+        
+        float: left;
+        margin-right: 40px;
+    }
+}
+@media screen and (min-width:630px) and (max-width:749px) {
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }    
+    .project-wrapper img {
+        width: 100%;    
+    }
+}
+@media screen and (max-width:520px) {
+    .project-item img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+/* WORK EXPERIENCE
+-------------------------------------------------*/
+.work-item {
+    margin: 30px 0;
+}
+.work-details {
+    margin: 0;
+    line-height: .3em;
+}
+.work-summary p {
+    margin: 0;
+}
+@media screen and (min-width: 750px) {
+    .work-item {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 10px;
+    }
+}
+/* EDUCATION
+-------------------------------------------------*/
+.education-item {
+    margin: 30px 0;
+}
+.education-item p {
+    margin: 0;
+}
+
+/* FOOTER
+-------------------------------------------------*/
+footer {
+    background: #735d78;
+    color: black;
+    text-align: center;
+    justify-content: space-between;
+}
+footer p {
+    color:#f9dc5c
+}
+.socials{
+    list-style-type: none;
+    padding: 0;    
+}
+.socials li{
+    display: inline-block;
+    margin-left: 9px;
+}
+.socials img:hover {
+    opacity: 0.5;
+}
+.socials img{
+    width: 32px;
+}
+@media screen and (min-width: 475px) {
+    footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    }
+}

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var mymap = L.map("mapid").setView([0, 0], 6.5);
+  var mymap = L.map("mapid").setView([0, 0], 3.5);
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution:
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
   education.bindPopup(
     "<div id='Education'><b><strong> Texas State University - San Marcos, TX \
       </strong><b><br> <img src='images/txst.jpg' width='128px' height='100'><br><p>\
-      Master's of Applied Geography, <br>Geographic Information Science / 2018-2022 <br><br> \
+      Master's of Applied Geography, <br>Geographic Information Science / 2018-2023 <br><br> \
       Bachelor's of Science, Water Resources / 2009-2013 <br><br> \
       Certificates in Geographic Information Science and Envrionmental Interpretation / 2009-2013 <br><br> \
       </p></div>"
@@ -201,8 +201,4 @@ document.addEventListener("DOMContentLoaded", function () {
       Zoom out to learn more about me, <br>and thanks for stopping by!</p>\
     </div>"
   );
-
-  // dynamic copyright year
-  var currentYear = new Date().getFullYear();
-  document.getElementById("year").innerHTML = currentYear;
 });
